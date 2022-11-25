@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
     def index
-        @posts = Post.where(user_id: 1)
+        @posts = Post.all
         render json: @posts
     end
 
